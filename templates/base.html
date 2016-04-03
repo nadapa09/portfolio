@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset="UTF-8">
+		<title>Nithin - {% block title1 %} default title1 {% endblock %}</title>
+		<style>
+		h1{
+			color: white;
+			font-family: arial;
+			background-color: red;
+			display: block;
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+			{% block title2 %} default title2 {% endblock %}
+			<nav>
+				<a href="index">{% block home %} default home {% endblock %}</a>
+				<a href="food">{% block food %} default food {% endblock %}</a>
+				<a href="family">{% block family %} default family {% endblock %}</a>
+				<a href="login">{% block login %} default login {% endblock %}</a>
+			</nav>
+		</header>
+		{{prompt}}
+		{% block content %}
+		I should never be able to see this content. It should be replaced.
+		{% endblock %}
+		<footer>
+			<p>Copyright &copy; Nithin Adapa from the University of Michigan <a href="https://www.si.umich.edu/">School of Information</a></p>
+		</footer>
+	</body>
+</html>

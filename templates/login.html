@@ -1,0 +1,28 @@
+{% extends "templates/base.html" %}
+
+{% block prompt %}
+	Please Login.
+{% endblock %}
+
+{% block content %}
+	<form method="post" action="/login">
+		<label>Username: <input type = "text" name = "user"/> </label>
+		</br>
+		<label>Password: <input type = "text" name = "pass"/> </label>
+		</br>
+		<input type = "submit" value = "login">
+	</form>
+{%endblock%}
+
+{% block title1 %}
+	Login
+{% endblock %}
+
+{% block title2 %}
+	<h1>Login</h1>
+{% endblock %}
+
+{% block home %}Home{% endblock %}
+{% block food %}Food{% endblock %}
+{% block family %}Family{% endblock %}
+{% block login %}LOGIN{% endblock %}
