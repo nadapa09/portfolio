@@ -14,8 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import webapp2
+
 import os
+import urllib
+import webapp2
 import logging
 import jinja2
 
@@ -25,18 +27,27 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-#class MainHandler(webapp2.RequestHandler):
-#	def get (self):
-#        path = self.response.path
-#		template = JINJA_ENVIRONMENT.get_template('templates' + path)
-#		self.response.write(template.render())
-
-class IndexHandler(webapp2.RequestHandler):
+class MainHandler(webapp2.RequestHandler):
     def get(self):
-    	template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-    	self.response.write(template.render({'title': 'HOME'}))
-    	#if you need to render two elements, replace above line with this one
-    	 #self.response.write(template.render({'title': 'HOME', 'name':'Colleen'}))
+        path = self.request.path
+        if path == '/index':
+            template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+            self.response.write(template.render({'title': 'Welcome'}))
+        elif path == '/aboutMe':
+            template = JINJA_ENVIRONMENT.get_template('templates/aboutMe.html')
+            self.response.write(template.render({'title': 'About Me'}))
+        elif path == 'resume':
+            template = JINJA_ENVIRONMENT.get_template('templates/resume.html')
+            self.response.write(template.render({'title': 'Resume'}))
+        elif path == 'activities':
+            template = JINJA_ENVIRONMENT.get_template('templates/activities.html')
+            self.response.write(template.render({'title': 'Activities'}))
+        elif path == 'contact':
+            template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
+            self.response.write(template.render({'title': 'Contact Me'}))
+        else:
+            template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+            self.response.write(template.render({'title': 'Welcome'}))
 
 class LoginHandler(webapp2.RequestHandler):
     def get(self):
@@ -58,23 +69,14 @@ class LoginHandler(webapp2.RequestHandler):
             logging.info("Username: " + self.request.get('user'))
             logging.info("Password: " + self.request.get('pass'))
 
-class FamilyHandler(webapp2.RequestHandler):
-    def get(self):
-    	template = JINJA_ENVIRONMENT.get_template('templates/family.html')
-    	self.response.write(template.render())
-
-
-class FoodHandler(webapp2.RequestHandler):
-    def get(self):
-    	template = JINJA_ENVIRONMENT.get_template('templates/food.html')
-     	self.response.write(template.render())
 
 
 app = webapp2.WSGIApplication([
-#	('/', MainHandler)
-    ('/', IndexHandler),
-    ('/login', LoginHandler),
-    ('/index', IndexHandler),
-    ('/family', FamilyHandler),
-    ('/food', FoodHandler)
+    ('/', MainHandler),
+    ('/index', MainHandler),
+    ('/aboutMe', MainHandler),
+    ('/resume', MainHandler),
+    ('/activities', MainHandler),
+    ('/contact', MainHandler),
+    ('/login', LoginHandler)
 ], debug=True)
