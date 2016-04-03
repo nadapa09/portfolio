@@ -36,13 +36,13 @@ class MainHandler(webapp2.RequestHandler):
         elif path == '/aboutMe':
             template = JINJA_ENVIRONMENT.get_template('templates/aboutMe.html')
             self.response.write(template.render({'title': 'About Me'}))
-        elif path == 'resume':
+        elif path == '/resume':
             template = JINJA_ENVIRONMENT.get_template('templates/resume.html')
             self.response.write(template.render({'title': 'Resume'}))
-        elif path == 'activities':
+        elif path == '/activities':
             template = JINJA_ENVIRONMENT.get_template('templates/activities.html')
             self.response.write(template.render({'title': 'Activities'}))
-        elif path == 'contact':
+        elif path == '/contact':
             template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
             self.response.write(template.render({'title': 'Contact Me'}))
         else:
