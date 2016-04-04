@@ -69,6 +69,28 @@ class LoginHandler(webapp2.RequestHandler):
             logging.info("Username: " + self.request.get('user'))
             logging.info("Password: " + self.request.get('pass'))
 
+#class LoginHandler(webapp2.RequestHandler):
+#    def get(self):
+#        template = JINJA_ENVIRONMENT.get_template('templates/login.html')
+#        self.response.write(template.render())
+#
+#    def post(self):
+#        validation = ["Nithin":"Adapa", "Colleen":"Professor", "Master":"Key"]
+#        for x, y in validation.iteritems():
+#            if ((x == self.request.get('user')) && (y == self.request.get('pass')) :    
+#                template = JINJA_ENVIRONMENT.get_template('templates/loggedin.html')
+#                self.response.write(template.render())
+#                temp = false;
+#                break;
+#
+#        if (temp):
+#            #self.response.write("Bad credentials. Try again.</br></br>")
+#            template = JINJA_ENVIRONMENT.get_template('templates/login.html')
+#            self.response.write(template.render({'prompt':'Bad Credentials. Try Again.'}))
+#            logging.info("Bad credentials. Try again.")
+#            logging.info("Username: " + self.request.get('user'))
+#            logging.info("Password: " + self.request.get('pass'))
+#
 
 
 app = webapp2.WSGIApplication([
