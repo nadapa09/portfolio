@@ -5,15 +5,12 @@
 }
 
 #footer {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: #b0e2FF;
+	background-color: #black;
 	font-family: Impact;
 	border: 5px fixed black;
 	text-align: center;
-	padding: 80px;
-	margin: 40px;
-	width: 100%
+	height: 20%;
+	width: 100%;
 	clear: both;
 }
 
@@ -69,6 +66,13 @@ header {
 #copyright {
 	text-align: center;
 	display: inline-block;
+	background-color: red;
+}
+
+#socialIcons {
+	text-align: center;
+	display: inline-block;
+	background-color: red;
 }
 
 div div div div img {
@@ -169,6 +173,13 @@ li {
 	text-align: left;
 }
 
+div div > h2 {
+	text-align: center;
+	color: #8B1A1A;
+	font-family: Impact;
+	font-size: 40px;
+}
 
-
-
+.center {
+	text-align: center;
+}

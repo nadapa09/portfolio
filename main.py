@@ -55,8 +55,8 @@ class LoginHandler(webapp2.RequestHandler):
         self.response.write(template.render())
 
     def post(self):
-        username = "Colleen"
-        password = "pass"
+        username = "Nithin"
+        password = "Adapa"
 
         if ((self.request.get('user') == username) and (self.request.get('pass') == password)):
             template = JINJA_ENVIRONMENT.get_template('templates/loggedin.html')
@@ -64,7 +64,7 @@ class LoginHandler(webapp2.RequestHandler):
         else:
             #self.response.write("Bad credentials. Try again.</br></br>")
             template = JINJA_ENVIRONMENT.get_template('templates/login.html')
-            self.response.write(template.render({'prompt':'Bad credentials. Try again.'}))
+            self.response.write(template.render({'prompt':'Bad Credentials. Try Again.'}))
             logging.info("Bad credentials. Try again.")
             logging.info("Username: " + self.request.get('user'))
             logging.info("Password: " + self.request.get('pass'))

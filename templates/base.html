@@ -42,24 +42,37 @@
 				</ul>
 			</nav>
 		</header>
-		{{prompt}}
 
 		{% block content %}
 			Page Content
 		{% endblock %}
 
-		<footer>
-			<div id="footer">
-				<div id="copyright" class="pull-left">
+		<h4 style="text-align: center;">{{prompt}}</h4>
+
+		<footer id="footer">
+			<nav class="navbar">
+				<div class="container center">
 					<p>Copyright &copy; Nithin Adapa from the University of Michigan</p>
 				</div>
-				<div class="navbar-text pull-right">
-					<a href="https://www.facebook.com/nithin96"><i class="fa fa-facebook-square fa-3x"></i></a>
-					<a href="https://twitter.com/nadapa09"><i class="fa fa-twitter fa-3x"></i></a>
-					<a href="https://www.linkedin.com/in/nithinadapa"><i class="fa fa-camera-retro fa-3x"></i></a>
-					<a href="https://github.com/nadapa09"><i class="fa fa-github-square fa-3x"></i></a>
-				</div>
-			</div>
+
+				<div class = "row">
+					<div class = "col-md-4">
+					</div>
+					<div class = "col-md-4">
+						<div class="container center" style="float:center; align-text:center;">
+							<ul class="nav">
+								<li class="navbar-text"><a href="https://www.facebook.com/nithin96"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+								<li class="navbar-text"><a href="https://twitter.com/nadapa09"><i class="fa fa-twitter fa-3x"></i></a></li>
+								<li class="navbar-text"><a href="https://www.linkedin.com/in/nithinadapa"><i class="fa fa-camera-retro fa-3x"></i></a></li>
+								<li class="navbar-text"><a href="https://github.com/nadapa09"><i class="fa fa-github-square fa-3x"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class = "col-md-4">
+					</div>
+				</div>							
+			</nav>
 		</footer>
+
 	</body>
 </html>
