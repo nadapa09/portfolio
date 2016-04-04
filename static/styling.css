@@ -149,7 +149,7 @@ li {
 
 .gallery div > h2 {
 	text-align: center;
-	color: #8B1A1A;
+	color: black;
 	font-family: Impact;
 	font-size: 3em;
 }
@@ -170,17 +170,100 @@ li {
 .gallery {
 	background-color: #407bdb
 }
-
-/*
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 700px) {
+	.jumbotron {
+		background-image:url('../static/coverImage/LongPhone.jpg');
+	}
+	header {
+		color: #B18F6A;
+		font-family: Helvetica;
+		background-color: #D7B7FF
+	}
+	h1 {
+		font-family: Helvetica;
+	}
+	h2 {
+		font-family: Helvetica;
+	}
+	h3 {
+		font-family: Helvetica;
+	}
+	.gallery {
+		background-color: #AC92CC;
+	}
+	.dance {
+		background-color: #ffd7b7;
+	}
+	ul {
+		list-style: square;
+	}
+	#contactInfo {
+		background-color: #b7ffd7;
+	}
 
 }
-@media only screen and (min-width: 1200px) {
-	body {
-		background-color: blue;
+@media only screen and (min-width: 701px){
+	.jumbotron {
+		background-image:url('../static/coverImage/WideTablet.jpg');
+	}
+	header {
+		color: black;
+		font-family: 'UniqueRegular';
+		background-color: #e50000;
+	}
+	h1 {
+		font-family: 'UniqueRegular';
+	}
+	h2 {
+		font-family: 'UniqueRegular';
+	}
+	h3 {
+		font-family: 'UniqueRegular';
+	}
+	.gallery {
+		background-color: #cc0000;
+	}
+	.dance {
+		background-color: #b20000;
+	}
+	ul {
+		list-style: upper-roman;
+	}
+	#contactInfo {
+		background-color: #ff1919;
 	}
 }
-@media only screen and (min-width: 1600) {
+@media only screen and (min-width: 1100px) {
+	.jumbotron {
+		background-image:url('../static/coverImage/Laptop.jpg');
+	}
+	header {
+		font-family: Impact;
+		background-color: #b0e2FF;
+	}
+	h1 {
+		font-family: Impact;
+	}
 
-}*/
+	h2 {
+		font-family: Impact;
+	}
+
+	h3 {
+		font-family: Impact;
+	}
+	.gallery {
+		background-color: #407bdb;
+	}
+	.dance {
+		background-color: #79a2e5;
+	}
+	ul {
+		list-style: circle;
+	}
+	#contactInfo {
+		background-color: #94acad;
+	}
+}
+
 
