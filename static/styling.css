@@ -83,11 +83,20 @@ h4 {
 	font-family: Verdana,sans-serif;
 }
 
-#objective {
+#picture {
 	float:center;
 	text-align: center;
 	margin: 20px 20px 20px 20px;
 	padding: 10px 10px 10px 10px;
+	color: black;
+	background-color: #B9D7D9;
+}
+
+#objective {
+	float:center;
+	text-align: center;
+	margin: 50px 20px 50px 20px;
+	padding: 30px 10px 30px 10px;
 	color: black;
 	background-color: #B9D7D9;
 
@@ -96,8 +105,8 @@ h4 {
 #education {
 	float:center;
 	text-align: center;
-	margin: 20px 20px 20px 20px;
-	padding: 10px 10px 10px 10px;
+	margin: 50px 20px 50px 20px;
+	padding: 30px 10px 30px 10px;
 	color: black;
 	background-color: #B9D7D9;
 }
@@ -121,6 +130,15 @@ h4 {
 }
 
 #skills {
+	float:center;
+	text-align: center;
+	margin: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
+	color: black;
+	background-color: #B9D7D9;
+}
+
+#downloadLink {
 	float:center;
 	text-align: center;
 	margin: 20px 20px 20px 20px;

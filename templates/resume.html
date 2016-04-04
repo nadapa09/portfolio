@@ -18,22 +18,33 @@
 {% endblock %}
 
 {% block content %}
-	<div id="objective">
-		<h3>Objective</h3>
-		<hr width="70%">
-		<h4>To obtain a challenging internship position in the field of Computer Science for the summer of 2016</h4>
+	<div class = "row">
+		<div class = "col-md-6">
+			<div id="picture" class="thumbnail">
+				<img src="../static/gallery/5.jpg">
+			</div>
+		</div>
+
+		<div class = "col-md-6">
+			<div id="objective" class="thumbnail">
+				<h3>Objective</h3>
+				<hr width="70%">
+				<h4>To obtain a challenging internship position in the field of Computer Science for the summer of 2016</h4>
+			</div>
+			<div id="education" class="thumbnail">
+				<h3>Education</h3>
+				<hr width="70%">
+				<h4>University of Michigan</h4>
+				<ul>
+					<li>Expected Graduation April 2017</li>
+					<li>Bachelor of Science in Engineering in Computer Science</li>
+					<li>Relevant Classwork: Introduction to Computer Security (EECS 388), Introduction to Computer Organization (EECS 370), Foundations of Computer Science (EECS 376), Data Structures and Algorithms (EECS 281), Programming and Data Structures (EECS 280), Discrete Math (EECS 203), Agile Web Development (SI 206)</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
-	<div id="education">
-		<h3>Education</h3>
-		<hr width="70%">
-		<h4>University of Michigan</h4>
-		<ul>
-			<li>Expected Graduation April 2017</li>
-			<li>Bachelor of Science in Engineering in Computer Science</li>
-			<li>Relevant Classwork: Introduction to Computer Security (EECS 388), Introduction to Computer Organization (EECS 370), Foundations of Computer Science (EECS 376), Data Structures and Algorithms (EECS 281), Programming and Data Structures (EECS 280), Discrete Math (EECS 203), Agile Web Development (SI 206)</li>
-		</ul>
-	</div>
+			
 
 	<div id="workExp">
 		<h3>Work Experience</h3>
@@ -114,4 +125,11 @@
 			</div>
 		</ul>
 	</div>
+
+	<div id="downloadLink">
+		<h3>Download Resume As A PDF</h3>
+		<hr width="70%">
+		<a href="../static/resume.pdf" download><i class="fa fa-file-pdf-o fa-5x"></i></a>
+	</div>
+
 {% endblock %}
