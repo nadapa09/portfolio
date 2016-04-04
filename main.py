@@ -56,7 +56,7 @@ class LoginHandler(webapp2.RequestHandler):
         self.response.write(template.render())
 
     def post(self):
-        validation = {'Nithin':'Adapa', 'Colleen':'Professor', 'Master':'Key'};
+        validation = {'Nithin':'Admin', 'Colleen':'Professor', 'Master':'Key'};
 
         username = self.request.get('user')
         password = self.request.get('pass')

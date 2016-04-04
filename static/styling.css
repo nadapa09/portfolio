@@ -192,6 +192,13 @@ li {
 	scrolling: "no";
 }
 
+.logo {
+	height:35%;
+	width: 35%;
+	margin: 40px;
+	padding: 10px;
+}
+
 .gallery {
 	background-color: #407bdb
 }
