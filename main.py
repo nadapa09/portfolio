@@ -49,49 +49,27 @@ class MainHandler(webapp2.RequestHandler):
             template = JINJA_ENVIRONMENT.get_template('templates/index.html')
             self.response.write(template.render({'title': 'Welcome'}))
 
+
 class LoginHandler(webapp2.RequestHandler):
     def get(self):
         template = JINJA_ENVIRONMENT.get_template('templates/login.html')
         self.response.write(template.render())
 
     def post(self):
-        username = "Nithin"
-        password = "Adapa"
+        validation = {'Nithin':'Adapa', 'Colleen':'Professor', 'Master':'Key'};
 
-        if ((self.request.get('user') == username) and (self.request.get('pass') == password)):
+        username = self.request.get('user')
+        password = self.request.get('pass')
+
+        if (validation[username] == password) :
             template = JINJA_ENVIRONMENT.get_template('templates/loggedin.html')
             self.response.write(template.render())
         else:
-            #self.response.write("Bad credentials. Try again.</br></br>")
             template = JINJA_ENVIRONMENT.get_template('templates/login.html')
             self.response.write(template.render({'prompt':'Bad Credentials. Try Again.'}))
             logging.info("Bad credentials. Try again.")
             logging.info("Username: " + self.request.get('user'))
             logging.info("Password: " + self.request.get('pass'))
-
-#class LoginHandler(webapp2.RequestHandler):
-#    def get(self):
-#        template = JINJA_ENVIRONMENT.get_template('templates/login.html')
-#        self.response.write(template.render())
-#
-#    def post(self):
-#        validation = ["Nithin":"Adapa", "Colleen":"Professor", "Master":"Key"]
-#        for x, y in validation.iteritems():
-#            if ((x == self.request.get('user')) && (y == self.request.get('pass')) :    
-#                template = JINJA_ENVIRONMENT.get_template('templates/loggedin.html')
-#                self.response.write(template.render())
-#                temp = false;
-#                break;
-#
-#        if (temp):
-#            #self.response.write("Bad credentials. Try again.</br></br>")
-#            template = JINJA_ENVIRONMENT.get_template('templates/login.html')
-#            self.response.write(template.render({'prompt':'Bad Credentials. Try Again.'}))
-#            logging.info("Bad credentials. Try again.")
-#            logging.info("Username: " + self.request.get('user'))
-#            logging.info("Password: " + self.request.get('pass'))
-#
-
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
