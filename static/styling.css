@@ -4,12 +4,30 @@
 	clear:both;
 }
 
+#footer {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #b0e2FF;
+	font-family: Impact;
+	border: 5px fixed black;
+	text-align: center;
+	padding: 80px;
+	margin: 40px;
+	width: 100%
+	clear: both;
+}
+
 header {
 	margin-top: -20px;
+	padding: 5px;
 	text-align: center;
 	background-color: #b0e2FF;
 	border: 5px fixed black;
 	font-family: Impact;
+	font-weight: bold;
+	font-size: 20px;
+
+
 }
 
 #upperHeader h2 {
@@ -35,15 +53,6 @@ header {
 
 #homepage {
 	background-color: #b0e2FF
-}
-
-#footer {
-	background-color: #b0e2FF;
-	font-family: Impact;
-	border: 5px fixed black;
-	text-align: center;
-	padding: 80px;
-	margin: 40px;
 }
 
 .navbar-text{
@@ -145,6 +154,15 @@ h4 {
 	padding: 10px 10px 10px 10px;
 	color: black;
 	background-color: #B9D7D9;
+}
+
+#contactInfo {
+	float:center;
+	text-align: center;
+	margin: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
+	color: black;
+	background-color: #528b8b;
 }
 
 li {
