@@ -1,4 +1,4 @@
-@import "compass/css3";
+
 
 #navBar {
 	clear:both;
@@ -33,20 +33,17 @@ header {
 	color: white;
 }
 
-.carousel-inner > .item > img, 
-	.carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-
 #homepage {
-	background-color: 
+	background-color: #b0e2FF
 }
 
-footer {
+#footer {
 	background-color: #b0e2FF;
 	font-family: Impact;
+	border: 5px fixed black;
 	text-align: center;
+	padding: 80px;
+	margin: 40px;
 }
 
 .navbar-text{
@@ -69,3 +66,73 @@ div div div div img {
 	height: 340px;
 	width: 340px;
 }
+
+div {
+	border-radius: 5px;
+}
+
+h3 {
+	margin-left: 5px;
+	margin-bottom: 15px;
+	font-family: Impact,sans-serif;
+}
+
+h4 {
+	margin-left: 5px;
+	margin-bottom: 15px;
+	font-family: Verdana,sans-serif;
+}
+
+#objective {
+	float:center;
+	text-align: center;
+	margin: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
+	color: black;
+	background-color: #B9D7D9;
+
+}
+
+#education {
+	float:center;
+	text-align: center;
+	margin: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
+	color: black;
+	background-color: #B9D7D9;
+}
+
+#workExp {
+	float:center;
+	text-align: center;
+	margin: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
+	color: black;
+	background-color: #B9D7D9;
+}
+
+#projExp {
+	float:center;
+	text-align: center;
+	margin: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
+	color: black;
+	background-color: #B9D7D9;
+}
+
+#skills {
+	float:center;
+	text-align: center;
+	margin: 20px 20px 20px 20px;
+	padding: 10px 10px 10px 10px;
+	color: black;
+	background-color: #B9D7D9;
+}
+
+li {
+	text-align: left;
+}
+
+
+
+
