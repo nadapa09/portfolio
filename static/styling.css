@@ -1,0 +1,15 @@
+@import "compass/css3";
+
+nav {
+	clear:both;
+}
+
+.login {
+	font-size: 18px;
+	color: green;
+	margin: 10px 10px 0px 0px;
+}
+
+.index {
+	
+}

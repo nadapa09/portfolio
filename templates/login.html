@@ -4,6 +4,14 @@
 	Please Login.
 {% endblock %}
 
+{% block title1 %}
+	- Login
+{% endblock %}
+
+{% block title2 %}
+	<h2>Login</h2>
+{% endblock %}
+
 {% block content %}
 	<form method="post" action="/login">
 		<label>Username: <input type = "text" name = "user"/> </label>
@@ -12,12 +20,4 @@
 		</br>
 		<input type = "submit" value = "login">
 	</form>
-{%endblock%}
-
-{% block title1 %}
-	Login
-{% endblock %}
-
-{% block title2 %}
-	<h2>Login</h2>
 {% endblock %}

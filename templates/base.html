@@ -2,45 +2,49 @@
 <html lang='en'>
 	<head>
 		<meta charset="UTF-8">
-		<title>Nithin Adapa - {% block title1 %} default title1 {% endblock %}</title>
+		<title>Nithin Adapa {% block title1 %} default title1 {% endblock %}</title>
 		<meta name="description" content="Nithin Adapa - Computer Science Engineering @ University of Michigan Graduating April 2017">
 
 		<!-- CSS Files -->
-		
+		<link rel="stylesheet" href="../static/styling.css" type="text/css">
+
 		<!-- JavaScript Files -->
+		<!--
 		<script src="../static/main.js" type="text/javascript"></script>
 		<script src="../static/bubbles.js" type="text/javascript"></script>
 		<script src="../static/alphabet.js" type="text/javascript"></script>
+		-->
+
 		<!-- Bootstrap Library -->
 		<link rel="stylesheet" href="../static/bootstrap.css" type="text/css">
 		<link rel="stylesheet" href="../static/bootstrap.min.css" type="text/css">
 		<script src="../static/bootstrap.js" type="text/javascript"></script>
 		<script src="../static/bootstrap.min.js" type="text/javascript"></script>
+
 		<!-- JQuery Library -->
 		<script src="../static/jquery.js" type="text/javascript"></script>
 
 	</head>
 	<body>
 		<header>
-			<a href="index"><h1>Nithin Adapa</h1></a>
-			<a href="login">Login</a>
+			<a href="index" class="pull-left index"><h1>Nithin Adapa</h1></a>
+			<a href="login" class="pull-right login">Login</a>
 			<nav>
-				<a href="aboutMe">About Me</a>
-				<a href="resume">Resume</a>
-				<a href="activities">Activities</a>
-				<a href="contact">Contact Me</a>
+				<ul class="nav nav-tabs nav-justified">
+				  <li><a href="aboutMe">About Me</a></li>
+				  <li><a href="activities">Activities</a></li>
+				  <li><a href="resume">Resume</a></li>
+				  <li><a href="contact">Contact Me</a></li>
+				</ul>
 			</nav>
 			{% block title2 %} default title2 {% endblock %}
 		</header>
 
-		<div id="body">
-			{{prompt}}
+		{{prompt}}
 
-			{% block content %}
-				Page Content
-			{% endblock %}
-
-		</div>
+		{% block content %}
+			Page Content
+		{% endblock %}
 
 		<footer>
 			<div>

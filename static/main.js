@@ -1,18 +1,8 @@
-var red = [0, 100, 63];
-var orange = [40, 100, 60];
-var green = [75, 100, 40];
-var blue = [196, 77, 55];
-var purple = [280, 50, 60];
-
-var myName = "Nithin Adapa";
-var letterColors = [red, orange, green, blue, purple];
-if (myName.length < 10) {
-    bubbleShape = "square"
-}
-else {
-    bubbleShape = "circle"
-}
-
-
-drawName(myName, letterColors);
-bounceBubbles();
+$(function () {
+	    setInterval(function () {
+		    $('.star-1').fadeOut(150).delay(2000).fadeIn(300).fadeOut(150).delay(1254);
+	        $('.star-2').fadeOut(300).fadeIn(120).fadeOut(120).delay(1920);
+	        $('.star-3').fadeOut(150).delay(1200).fadeIn(300).fadeOut(150).delay(800);
+	        $('.star-4').fadeOut(700).fadeIn(300).fadeOut(160).delay(1350);
+	    }, 1);
+    });
