@@ -33,9 +33,9 @@ class MainHandler(webapp2.RequestHandler):
         if path == '/index':
             template = JINJA_ENVIRONMENT.get_template('templates/index.html')
             self.response.write(template.render({'title': 'Welcome'}))
-        elif path == '/aboutMe':
-            template = JINJA_ENVIRONMENT.get_template('templates/aboutMe.html')
-            self.response.write(template.render({'title': 'About Me'}))
+        elif path == '/gallery':
+            template = JINJA_ENVIRONMENT.get_template('templates/gallery.html')
+            self.response.write(template.render({'title': 'Gallery'}))
         elif path == '/resume':
             template = JINJA_ENVIRONMENT.get_template('templates/resume.html')
             self.response.write(template.render({'title': 'Resume'}))
@@ -74,7 +74,7 @@ class LoginHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/index', MainHandler),
-    ('/aboutMe', MainHandler),
+    ('/gallery', MainHandler),
     ('/resume', MainHandler),
     ('/activities', MainHandler),
     ('/contact', MainHandler),

@@ -33,6 +33,12 @@ header {
 	color: white;
 }
 
+.carousel-inner > .item > img, 
+	.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
 #homepage {
 	background-color: 
 }
@@ -59,3 +65,7 @@ footer {
 	display: inline-block;
 }
 
+div div div div img {
+	height: 340px;
+	width: 340px;
+}

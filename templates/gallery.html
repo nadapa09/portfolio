@@ -1,0 +1,63 @@
+{% extends "templates/base.html" %}
+
+{% block title1 %}
+	- Gallery
+{% endblock %}
+
+{% block navs %}
+	<li><a href="index">Home</a></li>
+	<li><a href="activities">Activities</a></li>
+	<li class="active"><a href="gallery">Gallery</a></li>
+	<li><a href="resume">Resume</a></li>
+	<li><a href="contact">Contact Me</a></li>
+	<li><a href="login">Login</a></li>
+{% endblock %}
+
+{% block title2 %}
+	<h2>Gallery</h2>
+{% endblock %}
+
+{% block content %}
+	<div class = "gallery">
+		<div class = "container">
+			<h2>Explore My Life</h2>
+			<div class = "col-md-4">
+				<div class = "thumbnail">
+					<img src ="../static/gallery/1.jpg"/>
+				</div>
+				<div class = "thumbnail">
+					<img src ="../static/gallery/2.jpg"/>
+				</div>
+				<div class = "thumbnail">
+					<img src ="../static/gallery/3.jpg"/>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "thumbnail">
+					<img src ="../static/gallery/4.jpg"/>
+				</div>
+				<div class = "thumbnail">
+					<img src ="../static/gallery/5.jpg"/>
+				</div>
+				<div class = "thumbnail">
+					<img src ="../static/gallery/6.jpg"/>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "thumbnail">
+					<img src ="../static/gallery/7.jpg"/>
+				</div>
+				<div class = "thumbnail">
+					<img src ="../static/gallery/8.jpg"/>
+				</div>
+				<div class = "thumbnail">
+					<img src ="../static/gallery/9.jpg"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+
+
