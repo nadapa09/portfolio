@@ -2,10 +2,26 @@
 
 {% block title1 %}{% endblock %}
 
+{% block navs %}
+	<li class="active"><a href="index">Home</a></li>
+	<li><a href="aboutMe">About Me</a></li>
+	<li><a href="activities">Activities</a></li>
+	<li><a href="resume">Resume</a></li>
+	<li><a href="contact">Contact Me</a></li>
+	<li><a href="login">Login</a></li>
+{% endblock %}
+
 {% block title2 %}
-	<h2>Index</h2>
+	<h2>Home</h2>
 {% endblock %}
 
 {% block content %}
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Nithin Adapa</h1>
+			<hr width="80%">
+		</div>
+	</div>
+
 	
 {% endblock %}

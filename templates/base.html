@@ -27,19 +27,18 @@
 	</head>
 	<body>
 		<header>
-			<a href="index" class="pull-left index"><h1>Nithin Adapa</h1></a>
-			<a href="login" class="pull-right login">Login</a>
-			<nav>
-				<ul class="nav nav-tabs nav-justified">
-				  <li><a href="aboutMe">About Me</a></li>
-				  <li><a href="activities">Activities</a></li>
-				  <li><a href="resume">Resume</a></li>
-				  <li><a href="contact">Contact Me</a></li>
+			<div id="upperHeader">
+				<br>
+				<h2>Nithin Adapa</h2>
+				<hr width="50%">
+				{% block title2 %} default title2 {% endblock %}
+			</div>
+			<nav id="navBar">
+				<ul class="nav nav-tabs nav-justified" id ="">
+					{% block navs %}{% endblock %}
 				</ul>
 			</nav>
-			{% block title2 %} default title2 {% endblock %}
 		</header>
-
 		{{prompt}}
 
 		{% block content %}
@@ -47,10 +46,10 @@
 		{% endblock %}
 
 		<footer>
-			<div>
+			<div id="copyright">
 				<p>Copyright &copy; Nithin Adapa from the University of Michigan</p>
 			</div>
-			<div>
+			<div id="links">
 				<a href="https://www.facebook.com/nithin96">Facebook</a>
 				<a href="https://twitter.com/nadapa09">Twitter</a>
 				<a href="https://www.linkedin.com/in/nithinadapa">LinkedIn</a>

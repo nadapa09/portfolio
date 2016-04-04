@@ -1,15 +1,45 @@
 @import "compass/css3";
 
-nav {
+#navBar {
 	clear:both;
 }
-
-.login {
-	font-size: 18px;
-	color: green;
-	margin: 10px 10px 0px 0px;
+#tabs {
+	border: 50px fixed black;
+}
+header {
+	margin-top: -20px;
+	text-align: center;
+	background-color: #b0e2FF;
+	border: 5px fixed black;
+	font-family: Impact;
 }
 
-.index {
-	
+#upperHeader h2 {
+	font-size: 40px;
+}
+
+.jumbotron {
+	background-image:url('../static/coverImage/Laptop.jpg');
+  	height: 550px;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.jumbotron .container {
+	position: relative;
+	text-align: center;
+	vertical-align: center;
+	top: 180px;
+	font-size: 100px;
+	color: white;
+}
+
+#homepage {
+	background-color: 
+}
+
+footer {
+	background-color: #b0e2FF;
+	font-family: Impact;
+	text-align: center;
 }
