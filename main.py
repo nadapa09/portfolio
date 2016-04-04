@@ -66,7 +66,7 @@ class LoginHandler(webapp2.RequestHandler):
             self.response.write(template.render())
         else:
             template = JINJA_ENVIRONMENT.get_template('templates/login.html')
-            self.response.write(template.render({'prompt':'Bad Credentials. Try Again.'}))
+            self.response.write(template.render({'prompt':'<h4 class="center">Bad Credentials. Try Again.</h4>'}))
             logging.info("Bad credentials. Try again.")
             logging.info("Username: " + self.request.get('user'))
             logging.info("Password: " + self.request.get('pass'))
